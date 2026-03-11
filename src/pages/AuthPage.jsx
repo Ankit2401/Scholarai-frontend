@@ -18,7 +18,7 @@ export default function AuthPage() {
     if (mode === "register" && !form.name) return setError("Name is required.");
     setLoading(true);
     try {
-      const endpoint = mode === "login" ? "/auth/login" : "/auth/register";
+      const endpoint = mode === "login" ? "/api/auth/login" : "/api/auth/register";
       const res = await fetch(`${API}${endpoint}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
