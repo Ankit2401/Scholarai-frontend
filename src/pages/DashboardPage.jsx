@@ -102,12 +102,7 @@ export default function DashboardPage({ setPage }) {
             ${dark ? "text-[#5a6a82] hover:text-amber-400" : "text-[#9ca3af] hover:text-amber-600"}`}>
           ⏱ View session history
         </button>
-        <span className={dark ? "text-[#1e2a3a]" : "text-[#e2ddd5]"}>·</span>
-        <a href="http://localhost:8000/docs" target="_blank" rel="noreferrer"
-          className={`flex items-center gap-2 text-sm font-medium transition-colors
-            ${dark ? "text-[#5a6a82] hover:text-amber-400" : "text-[#9ca3af] hover:text-amber-600"}`}>
-          ↗ API Docs
-        </a>
+       
       </div>
     </div>
   );
